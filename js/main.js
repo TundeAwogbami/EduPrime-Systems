@@ -2,8 +2,7 @@
 (() => {
   "use strict";
 
-  // Set this to a Formspree / your own backend URL to send the contact form.
-  // Leave empty and the form opens the visitor's email app instead.
+  // (To do) Set this to a Formspree / backend URL to send the contact form.
   const FORM_ENDPOINT = "";
   const CONTACT_EMAIL = "contact@eduprime.ng";
 

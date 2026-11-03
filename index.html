@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>School Management Software for Nigerian Schools</title>
+  <link rel="icon" type="image/png" sizes="150x120" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+  <meta name="description" content="EduPrime Systems automates your school's processes: school management system, result checker, CBT, fee management and more. For schools from creche to senior secondary." />
+  <meta name="theme-color" content="#0F2A2E" />
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Page loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-word"><span>Edu</span><span>Prime</span></div>
+      <div class="loader-count"><b id="loader-count">0</b>%</div>
+    </div>
+  </div>
+
+  <!-- Custom cursor (For mouse users only) -->
+
+  <div class="scroll-progress" aria-hidden="true"><i id="scroll-bar"></i></div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-check" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 20 20"><path d="M4 10h12M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-person" viewBox="0 0 120 120"><circle cx="60" cy="42" r="22" fill="currentColor"/><path d="M16 112c0-26 20-42 44-42s44 16 44 42z" fill="currentColor"/></symbol>
+  </svg>
+
+  <!--  SECTION RAIL  -->
+  <nav class="rail" aria-label="Page sections">
+    <ul>
+      <li><a href="#home" data-label="Intro"><span class="sr-only">Intro</span></a></li>
+      <li><a href="#roles" data-label="Your team"><span class="sr-only">Your team</span></a></li>
+      <li><a href="#setup" data-label="Setup"><span class="sr-only">Setup</span></a></li>
+      <li><a href="#features" data-label="Features"><span class="sr-only">Features</span></a></li>
+      <li><a href="#affiliates" data-label="Affiliates"><span class="sr-only">Affiliates</span></a></li>
+      <li><a href="#faq" data-label="FAQ"><span class="sr-only">FAQ</span></a></li>
+      <li><a href="#contact-us" data-label="Contact"><span class="sr-only">Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <!--  HEADER  -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="EduPrime Systems home">
+        <img src="/assets/img/logo.png" alt="EduPrime Systems" height="40" />
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#setup">Get started</a></li>
+          <li><a href="#affiliates">Affiliates</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact-us">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Sign in
+              <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4.2l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="dropdown-menu" hidden>
+              <!-- TODO: replace the "#" links with your real staff and student login URLs -->
+              <li><a href="#">Staff</a></li>
+              <li><a href="#">Student</a></li>
+              <li><a href="https://eduprime.ng/login">Affiliate</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-primary btn-sm" data-magnetic href="https://eduprime.ng/school-register">Get started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!--  HERO  -->
+    <section class="hero" id="home">
+      <div class="container hero-copy">
+        <h1 class="split-words" id="hero-title">All-in-One School Management, Simplified.</h1>
+        <p class="lead reveal-on-load">Simplify student records, automate result computation, manage school fees and attendance, and keep parents informed. All from one easy-to-use platform built for Nigerian schools..</p>
+        <div class="hero-actions reveal-on-load">
+          <a class="btn btn-primary btn-lg" data-magnetic href="https://eduprime.ng/school-register">Request Free Demo <svg class="btn-arrow" width="18" height="18"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost btn-lg" data-magnetic href="#" id="go-to-school">Take me to my school</a>
+        </div>
+        <p class="hero-note reveal-on-load">Already on EduPrime Systems? Use the second button to sign in.</p>
+        <a class="scroll-cue reveal-on-load" href="#roles">Who Uses EduPrime? <span aria-hidden="true">&darr;</span></a>
+      </div>
+
+      <!-- Device mockups -->
+      <div class="container">
+        <div class="stage reveal-on-load" id="stage" data-cursor="Explore">
+          <div class="stage-glow" aria-hidden="true"></div>
+
+          <div class="laptop" id="laptop">
+            <div class="laptop-screen">
+              <div class="ui">
+                <aside class="ui-side">
+                  <span class="ui-logo"></span>
+                  <i class="is-on"></i><i></i><i></i><i></i><i></i>
+                </aside>
+                <div class="ui-main">
+                  <div class="ui-top"><b>Term 2 overview</b><span>Sample data</span></div>
+                  <div class="ui-kpis">
+                    <div><small>Fees collected</small><b data-count="18.4" data-prefix="&#8358;" data-suffix="M" data-dec="1">&#8358;18.4M</b></div>
+                    <div><small>Pupils</small><b data-count="447">447</b></div>
+                    <div><small>Attendance</small><b data-count="94" data-suffix="%">94%</b></div>
+                  </div>
+                  <div class="ui-chart">
+                    <p>Class average by subject</p>
+                    <ul>
+                      <li><i style="--h:78%"></i><span>Maths</span></li>
+                      <li><i style="--h:72%"></i><span>Eng</span></li>
+                      <li><i style="--h:81%"></i><span>Sci</span></li>
+                      <li><i style="--h:69%"></i><span>Soc</span></li>
+                      <li><i style="--h:85%"></i><span>Civic</span></li>
+                      <li><i style="--h:74%"></i><span>CRS</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="laptop-base"></div>
+          </div>
+
+          <div class="phone" id="phone">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <p class="ph-title">Fees</p>
+              <p class="ph-big">&#8358;18.4M</p>
+              <div class="ph-bar"><i></i></div>
+              <ul class="ph-list">
+                <li><span class="dot dot-ok"></span>Paid in full<b>312</b></li>
+                <li><span class="dot dot-part"></span>Part payment<b>94</b></li>
+                <li><span class="dot dot-owe"></span>Outstanding<b>41</b></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="chip chip-a" aria-hidden="true"><span class="chip-ico">&#8358;</span><div><b>Payment received</b><small>Receipt generated</small></div></div>
+          <div class="chip chip-b" aria-hidden="true"><span class="chip-ico chip-ico-y">A+</span><div><b>Report sheets ready</b><small>Primary 5, 36 pupils</small></div></div>
+        </div>
+      </div>
+
+      <!-- Marquee -->
+      <div class="marquee" aria-label="Key facts">
+        <div class="marquee-track">
+          <ul>
+            <li>Creche to SS3</li><li>No pupil limit</li><li>Works on any phone</li><li>Low data use</li><li>Fees, results and attendance in one place</li>
+          </ul>
+          <ul aria-hidden="true">
+            <li>Creche to SS3</li><li>No pupil limit</li><li>Works on any phone</li><li>Low data use</li><li>Fees, results and attendance in one place</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--  ROLES (stacked cards)  -->
+    <section class="section" id="roles">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">The School Team</p>
+          <h2>Everyone Has a Role. EduPrime Connects Them All.</h2>
+        </header>
+
+        <div class="personas">
+          <article class="persona" style="--i:0; --tone:#d9ece9">
+            <div class="persona-copy">
+              <h3>The principal</h3>
+              <p class="quote">&ldquo;I want an exclusive overview of school activities.&rdquo;</p>
+              <ul class="pains">
+                <li>Fees and results are scattered across notebooks and chats</li>
+                <li>It is hard to see how pupils and staff are performing</li>
+                <li>End of term turns into a scramble</li>
+              </ul>
+              <p class="with"><b>With EduPrime</b>See performance, fees and debts across the whole school in one place, from any device.</p>
+            </div>
+            <div class="persona-art" aria-hidden="true"><svg class="person"><use href="#i-person"/></svg><span class="badge">&#10003;</span></div>
+          </article>
+
+          <article class="persona" style="--i:1; --tone:#fbefc7">
+            <div class="persona-copy">
+              <h3>The teacher</h3>
+              <p class="quote">&ldquo;I would rather teach than copy scores.&rdquo;</p>
+              <ul class="pains">
+                <li>Class lists and scores live in personal notebooks</li>
+                <li>Report sheets are compiled by hand</li>
+                <li>Class and subject assignments are hard to keep current</li>
+              </ul>
+              <p class="with"><b>With EduPrime</b>Report sheets and class average are generated from the results you enter, session after session.</p>
+            </div>
+            <div class="persona-art" aria-hidden="true"><svg class="person"><use href="#i-person"/></svg><span class="badge">A+</span></div>
+          </article>
+
+<article class="persona" style="--i:2; --tone:#FADBD8">
+  <div class="persona-copy">
+    <h3>The student</h3>
+    <p class="quote">&ldquo;I want to focus on learning, not chasing results.&rdquo;</p>
+    <ul class="pains">
+      <li>Accessing academic results and progress updates can be difficult</li>
+      <li>Keeping track of assignments, timetables, and school activities is challenging</li>
+      <li>Getting timely information about academic performance isn't always easy</li>
+    </ul>
+    <p class="with"><b>With EduPrime</b>Students can access their academic results, monitor their progress, and stay informed about important school activities in one place.</p>
+  </div>
+  <div class="persona-art" aria-hidden="true">
+    <svg class="person"><use href="#i-person"/></svg>
+    <span class="badge">A+</span>
+  </div>
+</article>
+
+
+          <article class="persona" style="--i:2; --tone:#e3ebf0">
+            <div class="persona-copy">
+              <h3>The bursar</h3>
+              <p class="quote">&ldquo;Who paid, how much, and when?&rdquo;</p>
+              <ul class="pains">
+                <li>Payment records sit across receipts and bank apps</li>
+                <li>Debts are followed up from memory</li>
+                <li>There is no clear view by fee category</li>
+              </ul>
+              <p class="with"><b>With EduPrime</b>Payments by category, receipts on demand and every debt tracked in one ledger.</p>
+            </div>
+            <div class="persona-art" aria-hidden="true"><svg class="person"><use href="#i-person"/></svg><span class="badge">&#8358;</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--  SETUP STORY  -->
+    <section class="story" id="setup" data-story>
+      <div class="story-track">
+        <div class="story-sticky">
+          <div class="container story-grid">
+            <div class="story-left">
+              <p class="eyebrow">Get started in 4 steps</p>
+              <ul class="story-tabs">
+                <li><button type="button" data-step="0" aria-current="true"><span>SETUP</span><i></i></button></li>
+                <li><button type="button" data-step="1"><span>CLASSES</span><i></i></button></li>
+                <li><button type="button" data-step="2"><span>FEES</span><i></i></button></li>
+                <li><button type="button" data-step="3"><span>RESULTS</span><i></i></button></li>
+              </ul>
+
+              <div class="story-texts">
+                <div class="story-text is-active">
+                  <p class="story-no">01 SETUP</p>
+                  <h2>Register and verify your school</h2>
+                  <p class="lead">Enter the required information on sign-up and verify your school's account. Your school is ready to configure straight away.</p>
+                </div>
+                <div class="story-text">
+                  <p class="story-no">02 CLASSES</p>
+                  <h2>Add classes, staff and students</h2>
+                  <p class="lead">Add classrooms, staff, sessions and students. Assign teachers to classes and subjects to teachers.</p>
+                </div>
+                <div class="story-text">
+                  <p class="story-no">03 FEES</p>
+                  <h2>Track every payment</h2>
+                  <p class="lead">Manage payments by category, generate receipts and follow up debts, all in one ledger.</p>
+                </div>
+                <div class="story-text">
+                  <p class="story-no">04 RESULTS</p>
+                  <h2>Deploy for staff, parents and students</h2>
+                  <p class="lead">Your school is live. Generate academic reports and report sheets for each term and session.</p>
+                </div>
+              </div>
+              <a class="btn btn-primary" data-magnetic href="https://eduprime.ng/school-register">Create an account</a>
+            </div>
+
+            <div class="story-right" data-cursor="Scroll">
+              <div class="story-panel is-active">
+                <div class="mock-card">
+                  <p class="mock-h">Register your school</p>
+                  <div class="mock-field"><small>School name</small><b>Bright Future Academy</b></div>
+                  <div class="mock-field"><small>Email</small><b>admin@brightfuture.ng</b></div>
+                  <div class="mock-btn">Verify account <svg width="16" height="16"><use href="#i-check"/></svg></div>
+                </div>
+              </div>
+              <div class="story-panel">
+                <div class="mock-card">
+                  <p class="mock-h">Classes</p>
+                  <ul class="mock-rows">
+                    <li><b>Primary 4</b><span>Mrs. Adeyemi</span><em>9 subjects</em></li>
+                    <li><b>Primary 5</b><span>Mr. Okafor</span><em>9 subjects</em></li>
+                    <li><b>JSS 1</b><span>Mrs. Bello</span><em>12 subjects</em></li>
+                    <li><b>SS 2</b><span>Mr. Danjuma</span><em>14 subjects</em></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="story-panel">
+                <div class="mock-card">
+                  <p class="mock-h">Payments</p>
+                  <ul class="mock-rows">
+                    <li><b>Tuition</b><span>312 paid</span><em class="tag tag-ok">Paid</em></li>
+                    <li><b>Uniform</b><span>94 part-paid</span><em class="tag tag-part">Part</em></li>
+                    <li><b>Transport</b><span>41 owing</span><em class="tag tag-owe">Owing</em></li>
+                    <li><b>Receipts</b><span>Generated</span><em class="tag tag-ok">Ready</em></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="story-panel">
+                <div class="mock-card">
+                  <p class="mock-h">Report sheet</p>
+                  <ul class="mock-rows">
+                    <li><b>Mathematics</b><span>78</span><em>B+</em></li>
+                    <li><b>English</b><span>72</span><em>B</em></li>
+                    <li><b>Basic Science</b><span>81</span><em>A</em></li>
+                    <li><b>Class Average</b><span>4.2</span><em class="tag tag-ok">Ready</em></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  FEATURES INDEX  -->
+    <section class="section" id="features">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">EduPrime Features</p>
+          <h2>The Tools That Keep Your School Running</h2>
+        </header>
+
+        <ul class="index" id="feature-index">
+          <li><a href="#contact-us" class="index-row" data-cursor="Ask"><span class="code">EPS-01</span><span class="name">Student performance</span><span class="desc">Follow each pupil's progress, term by term, and see how staff are performing.</span><svg width="22" height="22"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="#contact-us" class="index-row" data-cursor="Ask"><span class="code">EPS-02</span><span class="name">Academic reports</span><span class="desc">Performance reports, report sheets and CGPA generation for each session.</span><svg width="22" height="22"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="#contact-us" class="index-row" data-cursor="Ask"><span class="code">EPS-03</span><span class="name">Classroom management</span><span class="desc">Set up classrooms, assign teachers to classes and subjects to teachers.</span><svg width="22" height="22"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="#contact-us" class="index-row" data-cursor="Ask"><span class="code">EPS-04</span><span class="name">Fee tracking</span><span class="desc">Payments by category, receipts, and debt follow-up in one place.</span><svg width="22" height="22"><use href="#i-arrow"/></svg></a></li>
+        </ul>
+        <div class="index-more" id="index-more" aria-hidden="true">
+          <ul class="index">
+            <li><a href="#contact-us" class="index-row" tabindex="-1" data-cursor="Ask"><span class="code">EPS-05</span><span class="name">CBT examination module</span><span class="desc">Students write computer based tests seamlessly and in real time.</span><svg width="22" height="22"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#contact-us" class="index-row" tabindex="-1" data-cursor="Ask"><span class="code">EPS-06</span><span class="name">Dormitory management</span><span class="desc">Keep boarding records organised in one place.</span><svg width="22" height="22"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#contact-us" class="index-row" tabindex="-1" data-cursor="Ask"><span class="code">EPS-07</span><span class="name">Timetable management</span><span class="desc">Plan lessons across classes and teachers.</span><svg width="22" height="22"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#contact-us" class="index-row" tabindex="-1" data-cursor="Ask"><span class="code">EPS-08</span><span class="name">Attendance management</span><span class="desc">Record and review attendance for your pupils.</span><svg width="22" height="22"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#contact-us" class="index-row" tabindex="-1" data-cursor="Ask"><span class="code">EPS-09</span><span class="name">Library management</span><span class="desc">Keep track of your school's books and borrowing.</span><svg width="22" height="22"><use href="#i-arrow"/></svg></a></li>
+          </ul>
+        </div>
+        <div class="index-actions">
+          <button class="btn btn-ghost" id="index-toggle" aria-expanded="false" aria-controls="index-more">Show more</button>
+        </div>
+      </div>
+    </section>
+
+    <!--  PRINCIPLES -->
+    <section class="section section-tint" id="about">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Why EduPrime</p>
+          <h2>Built for every Nigerian school</h2>
+        </header>
+        <ul class="principles" id="principles">
+          <li><h3>Creche to senior secondary.</h3><p>One system covers every class level in your school.</p></li>
+          <li><h3>No pupil limit.</h3><p>From a small nursery to a large secondary school.</p></li>
+          <li><h3>Any screen.</h3><p>Runs smoothly on phones, tablets and laptops. All you need is internet and a smart device.</p></li>
+          <li><h3>Light on data.</h3><p>Built so a small amount of data goes a long way.</p></li>
+          <li><h3>Made for school terms.</h3><p>Sessions, terms and results organised the way your school already works.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!--  AFFILIATES  -->
+    <section class="section section-dark" id="affiliates">
+      <div class="container split split-wide">
+        <div data-reveal>
+          <p class="eyebrow eyebrow-light">Affiliate programme</p>
+          <h2>Bring a school. Earn every term.</h2>
+          <p class="lead">Refer schools to EduPrime Systems and earn a lifetime commission of 10% per child per term, for as long as the school stays with us. There is no limit on how many schools you can refer.</p>
+          <p class="fineprint">Move the sliders to estimate your earnings. This is an estimate only; actual commission follows the affiliate programme terms.</p>
+          <a class="text-link text-link-light" href="https://eduprime.ng/login">Affiliate login</a>
+        </div>
+
+        <form class="calc" id="calc" onsubmit="return false" data-reveal>
+          <div class="seg" role="group" aria-label="Earnings period">
+            <button type="button" class="is-on" data-period="term" aria-pressed="true">Per term</button>
+            <button type="button" data-period="year" aria-pressed="false">Per year</button>
+          </div>
+
+          <div class="calc-big" aria-live="polite">
+            <b id="r-main">&#8358;0</b>
+            <span id="r-label">estimated per term</span>
+          </div>
+
+          <div class="calc-field">
+            <label for="c-schools">Schools you refer <output id="o-schools">5</output></label>
+            <input type="range" id="c-schools" min="1" max="50" value="5" />
+          </div>
+          <div class="calc-field">
+            <label for="c-pupils">Pupils per school <output id="o-pupils">300</output></label>
+            <input type="range" id="c-pupils" min="50" max="2000" step="10" value="300" />
+          </div>
+          <div class="calc-field">
+            <label for="c-fee">School fee per pupil per term <output id="o-fee">&#8358;60,000</output></label>
+            <input type="range" id="c-fee" min="10000" max="300000" step="5000" value="60000" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--  FAQ  -->
+    <section class="section" id="faq">
+      <div class="container split split-faq">
+        <div data-reveal>
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions</h2>
+          <p class="lead">Can't find your answer? Email us <a class="inline-link" href="mailto:contact@eduprime.ng">contact@eduprime.ng</a> and we will reply.</p>
+          <a class="btn btn-ghost" data-magnetic href="#contact-us">Ask anything else</a>
+        </div>
+
+        <div class="accordion" data-reveal>
+          <div class="acc-item">
+            <h3><button class="acc-btn" aria-expanded="false" aria-controls="a1" id="q1">What is EduPrime Systems?</button></h3>
+            <div class="acc-panel" id="a1" role="region" aria-labelledby="q1"><div><p>EduPrime Systems is specialised software that automates the academic and non-academic processes of schools.</p></div></div>
+          </div>
+          <div class="acc-item">
+            <h3><button class="acc-btn" aria-expanded="false" aria-controls="a2" id="q2">Which kinds of schools can use it?</button></h3>
+            <div class="acc-panel" id="a2" role="region" aria-labelledby="q2"><div><p>It manages schools from creche up to the senior secondary level.</p></div></div>
+          </div>
+          <div class="acc-item">
+            <h3><button class="acc-btn" aria-expanded="false" aria-controls="a3" id="q3">Is there a limit to how many pupils I can register?</button></h3>
+            <div class="acc-panel" id="a3" role="region" aria-labelledby="q3"><div><p>No. EduPrime Systems handles any school population efficiently.</p></div></div>
+          </div>
+          <div class="acc-item">
+            <h3><button class="acc-btn" aria-expanded="false" aria-controls="a4" id="q4">Can I manage my school from my phone?</button></h3>
+            <div class="acc-panel" id="a4" role="region" aria-labelledby="q4"><div><p>Yes. The system runs well on any screen size. All you need is an internet connection and a smart device.</p></div></div>
+          </div>
+          <div class="acc-item">
+            <h3><button class="acc-btn" aria-expanded="false" aria-controls="a5" id="q5">Does it use a lot of data?</button></h3>
+            <div class="acc-panel" id="a5" role="region" aria-labelledby="q5"><div><p>No. We built the system with data use in mind, so a small amount of data goes a long way.</p></div></div>
+          </div>
+          <div class="acc-item">
+            <h3><button class="acc-btn" aria-expanded="false" aria-controls="a6" id="q6">How does the affiliate programme work?</button></h3>
+            <div class="acc-panel" id="a6" role="region" aria-labelledby="q6"><div><p>You bring a school and earn a lifetime commission of 10% per child per term, for as long as that school stays with us.</p></div></div>
+          </div>
+          <div class="acc-item">
+            <h3><button class="acc-btn" aria-expanded="false" aria-controls="a7" id="q7">How many schools can I refer?</button></h3>
+            <div class="acc-panel" id="a7" role="region" aria-labelledby="q7"><div><p>As many as you like. The more schools you bring, the more you earn. Use the <a class="inline-link" href="#affiliates">earnings calculator</a> to see your potential.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  CONTACT  -->
+    <section class="section section-tint" id="contact-us">
+      <div class="container split">
+        <div data-reveal>
+          <p class="eyebrow">Contact</p>
+          <h2>Talk to us</h2>
+          <p class="lead">Questions about setting up your school? We are glad to help.</p>
+          <dl class="contact-list">
+            <div><dt>Visit</dt><dd>No 10, Maurice Close, Rayfield Road, Jos</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:contact@eduprime.ng">contact@eduprime.ng</a></dd></div>
+            <div><dt>Call</dt><dd><a href="tel:+2348039829432">+234 803 982 9432</a></dd></div>
+          </dl>
+        </div>
+
+        <form class="form" id="contact-form" novalidate data-reveal>
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="f-email">Email address</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="f-msg">How can we help?</label>
+            <textarea id="f-msg" name="message" rows="5" required></textarea>
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <button class="btn btn-primary" data-magnetic type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--  FINAL CTA and FOOTER  -->
+  <footer class="site-footer" id="finale">
+    <div class="container cta">
+      <h2 data-reveal>Ready to Simplify Your School Management?</h2>
+      <p class="lead" data-reveal>Register in minutes and go live for staff, parents and students.</p>
+      <a class="btn btn-accent btn-lg" data-magnetic href="https://eduprime.ng/school-register">Create your school account <svg class="btn-arrow" width="18" height="18"><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/img/logo.png" alt="EduPrime Systems" height="36" />
+        <p>School management software for schools from creche to senior secondary.</p>
+        <p><a href="tel:+2348039829432">+234 803 982 9432</a><br /><a href="mailto:contact@eduprime.ng">contact@eduprime.ng</a></p>
+      </div>
+
+      <nav aria-label="Useful links">
+        <h4>Useful links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact-us">Contact us</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Features">
+        <h4>What it covers</h4>
+        <ul>
+          <li><a href="#features">Student performance tracking</a></li>
+          <li><a href="#features">Teacher efficiency tracking</a></li>
+          <li><a href="#features">Results management</a></li>
+          <li><a href="#features">Categorised fee management</a></li>
+          <li><a href="#features">Dormitory management</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h4>Get updates</h4>
+        <form class="newsletter" id="newsletter" novalidate>
+          <label class="sr-only" for="n-email">Email address</label>
+          <input id="n-email" type="email" placeholder="Your email address" autocomplete="email" required />
+          <button class="btn btn-accent btn-sm" type="submit">Subscribe</button>
+        </form>
+        <ul class="social">
+          <!-- Social Profile URLs -->
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">X</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-base">
+      <p>&copy; 2019 &ndash; <span id="year">2026</span> EduPrime Systems. All rights reserved.</p>
+      <p>Managed by <a href="tel:+2348039829432">Apices International</a></p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

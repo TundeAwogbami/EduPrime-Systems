@@ -204,10 +204,8 @@ The UI is complete. These items connect it to the live product:
 | Newsletter | Validates and shows a toast, but sends nothing |  |
 | Social links | `#` placeholders in the footer | Add profile URLs |
 | Privacy policy | `#` placeholder | Add the page URL |
-| Logos | Loaded from `eduprime.ng` | Save into `assets/img/` and update the paths |
 | Favicon and share image | Inline SVG favicon, no `og:image` | Add `favicon.png` and a 1200×630 `og-image.png` |
 
-Connecting these only changes `href` values and one or two config constants. It does not change the project structure or stack.
 
 ---
 

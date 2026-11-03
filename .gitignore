@@ -1,0 +1,11 @@
+# Extension and editor folders
+.refact/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Dependencies and logs
+node_modules/
+*.log

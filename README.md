@@ -96,7 +96,6 @@ No installation is needed.
 
 The site opens at `http://127.0.0.1:5500` and reloads on save.
 
-> Open the **folder**, not a single file, so the relative CSS and JS paths resolve.
 
 ---
 
@@ -197,13 +196,13 @@ The UI is complete. These items connect it to the live product:
 
 | Item | Current state | Action |
 | --- | --- | --- |
-| Register / Create account | Links to `https://eduprime.ng/school-register` | Confirm the final URL |
+| Register / Create account | Links to `https://eduprime.ng/school-register` |  |
 | Take me to my school | Temporarily points to `https://eduprime.ng/login` (set in `main.js`) | Point to the real school sign-in page |
 | Request demo | Not yet on this page | Add the button and link to the booking page or form |
 | Staff and Student sign-in | `#` placeholders in the header dropdown | Add real login URLs |
 | Affiliate login | Links to `https://eduprime.ng/login` | Confirm the URL |
 | Contact form | Opens the visitor's email app when no endpoint is set | Set `FORM_ENDPOINT` (Formspree or your own API) |
-| Newsletter | Validates and shows a toast, but sends nothing | Connect to your email provider |
+| Newsletter | Validates and shows a toast, but sends nothing |  |
 | Social links | `#` placeholders in the footer | Add profile URLs |
 | Privacy policy | `#` placeholder | Add the page URL |
 | Logos | Loaded from `eduprime.ng` | Save into `assets/img/` and update the paths |
@@ -243,6 +242,3 @@ After deploying, update the Open Graph tags in `index.html` with the live URL an
 - Icons are inline SVG. Fonts are provided by Google Fonts under the SIL Open Font License.
 - Sample data in the hero mockup and calculator is illustrative only.
 
-## Licence
-
-Add a licence here (for example MIT) or state that the code is proprietary to EduPrime Systems.

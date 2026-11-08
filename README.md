@@ -195,12 +195,12 @@ The UI is complete. These items connect it to the live product:
 
 | Item | Current state | Action |
 | --- | --- | --- |
-| Register / Create account | Links to `https://eduprime.ng/school-register` |  |
-| Take me to my school | Temporarily points to `https://eduprime.ng/login` (set in `main.js`) | Point to the real school sign-in page |
+| Register / Create account | Links to `https://eduprime.ng/school-register` |  | Include page in current redesign
+| Take me to my school | Temporarily points to `https://eduprime.ng/login` (set in `main.js`) | Include page in current redesign |
 | Request demo | Not yet on this page | Add the button and link to the booking page or form |
 | Staff and Student sign-in | `#` placeholders in the header dropdown | Add real login URLs |
 | Affiliate login | Links to `https://eduprime.ng/login` | Confirm the URL |
-| Contact form | Opens the visitor's email app when no endpoint is set | Set `FORM_ENDPOINT` (Formspree or your own API) |
+| Contact form | Opens the visitor's email app when no endpoint is set | Set `FORM_ENDPOINT` (Formspree or API) |
 | Newsletter | Validates and shows a toast, but sends nothing |  |
 | Social links | `#` placeholders in the footer | Add profile URLs |
 | Privacy policy | `#` placeholder | Add the page URL |

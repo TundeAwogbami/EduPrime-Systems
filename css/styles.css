@@ -13,7 +13,7 @@
   --part: #e0a100;
   --owe: #c2415d;
 
-  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-display: Arial, "Helvetica Neue", Helvetica, "Liberation Sans", sans-serif;
   --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
 
   --r-sm: 8px;
@@ -158,7 +158,7 @@ html.js [data-reveal] { opacity: 0; transform: translateY(32px); transition: opa
 html.js [data-reveal].is-in { opacity: 1; transform: none; }
 
 /*  Hero  */
-.hero { padding-top: calc(var(--header-h) + clamp(40px, 8vw, 96px)); background: linear-gradient(180deg, var(--mist) 0%, var(--paper) 100%); overflow: hidden; }
+.hero { padding-top: calc(var(--header-h) + clamp(40px, 8vw, 96px)); padding-bottom: clamp(40px, 6vw, 80px); background: linear-gradient(180deg, var(--mist) 0%, var(--paper) 100%); overflow: hidden; }
 .hero-copy { text-align: center; }
 .hero-copy h1 { max-width: 18ch; margin-inline: auto; }
 .hero-copy .lead { margin-inline: auto; margin-top: 28px; }
@@ -219,15 +219,6 @@ html.js [data-reveal].is-in { opacity: 1; transform: none; }
 .chip-a { left: 1%; top: 22%; transform: translate3d(0, calc(var(--py, 0) * -.5px), 0); }
 .chip-b { left: 8%; bottom: 14%; animation-delay: -2s; transform: translate3d(0, calc(var(--py, 0) * -.9px), 0); }
 @keyframes floaty { 0%, 100% { translate: 0 0; } 50% { translate: 0 -10px; } }
-
-/* Marquee */
-.marquee { margin-top: clamp(28px, 5vw, 56px); border-block: 1px solid var(--line); padding-block: 22px; overflow: hidden; background: var(--paper); }
-.marquee-track { display: flex; width: max-content; animation: marquee 32s linear infinite; }
-.marquee:hover .marquee-track { animation-play-state: paused; }
-.marquee ul { display: flex; flex: none; }
-.marquee li { display: flex; align-items: center; font: 700 clamp(1.1rem, 2.2vw, 1.6rem) var(--font-display); letter-spacing: -0.01em; white-space: nowrap; }
-.marquee li::after { content: ""; width: 10px; height: 10px; margin-inline: 36px; border-radius: 50%; background: var(--pencil); }
-@keyframes marquee { to { transform: translateX(-50%); } }
 
 /*  Sections  */
 .section { padding-block: clamp(80px, 11vw, 140px); }

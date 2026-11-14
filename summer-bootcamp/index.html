@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" data-bootcamp="waitlist">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Summer Bootcamp | EduPrime Systems</title>
+  <link rel="icon" type="image/png" sizes="150x120" href="../assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="../assets/img/favicon.png" />
+  <meta name="description" content="EduPrime Summer Bootcamp: hands-on learning for pupils every August and September, virtual, in person or both." />
+  <meta name="theme-color" content="#0F2A2E" />
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/sections.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><i id="scroll-bar"></i></div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-check" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 20 20"><path d="M4 10h12M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-person" viewBox="0 0 120 120"><circle cx="60" cy="42" r="22" fill="currentColor"/><path d="M16 112c0-26 20-42 44-42s44 16 44 42z" fill="currentColor"/></symbol>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="../" aria-label="EduPrime Systems home">
+        <!-- Tip: save the logo into /assets/img/ and point this at the local copy -->
+        <img src="https://eduprime.ng/assets/img/logo.png" alt="EduPrime Systems" height="40" />
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="../#features">Features</a></li>
+          <li><a href="../#setup">Get started</a></li>
+          <li><a href="../summer-bootcamp/" aria-current="page">Bootcamp <span class="nav-pill">Summer</span></a></li>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../#faq">FAQ</a></li>
+          <li><a href="../#contact-us">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Sign in
+              <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4.2l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="dropdown-menu" hidden>
+              <!-- TODO: replace the "#" links with your real staff and student login URLs -->
+              <li><a href="#">Staff</a></li>
+              <li><a href="#">Student</a></li>
+              <li><a href="https://eduprime.ng/login">Affiliate</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-primary btn-sm" data-magnetic href="https://eduprime.ng/school-register">Get started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" data-page="bootcamp">
+
+    <!-- ===== Hero ===== -->
+    <section class="page-hero sun">
+      <div class="container">
+        <h1>A summer of learning, built for pupils.</h1>
+        <p class="lead">Hands-on sessions for pupils every August and September, online, in person or both. <mark class="tbc">[One sentence on what pupils will learn and build.]</mark></p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" data-magnetic href="#apply">
+            <span class="when" data-when="waitlist">Join the waitlist</span>
+            <span class="when" data-when="open">Reserve a seat</span>
+            <span class="when" data-when="closed">Get notified next year</span>
+          </a>
+          <span class="status"><i></i>
+            <span class="when" data-when="waitlist">Waitlist open</span>
+            <span class="when" data-when="open">Applications open</span>
+            <span class="when" data-when="closed">Applications closed</span>
+          </span>
+        </div>
+
+        <dl class="quick-facts">
+          <div><dt>When</dt><dd>August to September</dd></div>
+          <div><dt>Format</dt><dd>Virtual, in person or both</dd></div>
+          <div><dt>Ages</dt><dd><mark class="tbc">[Add age range]</mark></dd></div>
+          <div><dt>Duration</dt><dd><mark class="tbc">[Add weeks]</mark></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== Video ===== -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container" data-reveal>
+        <div class="media-video" data-cursor="Watch">
+            <!-- TODO: set data-youtube="VIDEO_ID" (YouTube) OR data-src="assets/video/your-file.mp4" (self-hosted, add data-captions="...vtt") -->
+            <button class="video-facade" type="button" data-youtube="" data-title="Summer Bootcamp preview">
+              <img src="../assets/img/bootcamp/video-poster.jpg" alt="" loading="lazy" width="1280" height="720" />
+              <span class="play" aria-hidden="true"></span>
+              <span class="video-label">Watch the bootcamp preview</span>
+            </button>
+          </div>
+      </div>
+    </section>
+
+    <!-- ===== What pupils do ===== -->
+    <section class="section section-tint">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">What pupils do</p>
+          <h2>Learn by making things</h2>
+        </header>
+        <ul class="learn-list" data-reveal>
+          <li><span class="no">01</span><h3><mark class="tbc">[Skill or theme one]</mark></h3><p><mark class="tbc">[Describe what pupils do and make.]</mark></p></li>
+          <li><span class="no">02</span><h3><mark class="tbc">[Skill or theme two]</mark></h3><p><mark class="tbc">[Describe what pupils do and make.]</mark></p></li>
+          <li><span class="no">03</span><h3><mark class="tbc">[Skill or theme three]</mark></h3><p><mark class="tbc">[Describe what pupils do and make.]</mark></p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Format ===== -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Format</p>
+          <h2>Join online or in person</h2>
+          <p class="lead">The bootcamp can run virtually, in person, or both. <mark class="tbc">[Confirm which formats the next edition offers.]</mark></p>
+        </header>
+        <div class="format-grid">
+          <article class="format-card" data-reveal>
+            <h3>Virtual</h3>
+            <ul>
+              <li><mark class="tbc">[What pupils need: device, internet, quiet space]</mark></li>
+              <li><mark class="tbc">[How sessions run: live, recorded, schedule]</mark></li>
+            </ul>
+          </article>
+          <article class="format-card" data-reveal>
+            <h3>In person</h3>
+            <ul>
+              <li><mark class="tbc">[Venue and city]</mark></li>
+              <li><mark class="tbc">[Daily times, what to bring, supervision]</mark></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Schedule ===== -->
+    <section class="section section-sun">
+      <div class="container split">
+        <header data-reveal>
+          <p class="eyebrow">Schedule</p>
+          <h2>How the weeks run</h2>
+          <p class="lead">Runs during August and September. <mark class="tbc">[Add exact start and end dates.]</mark></p>
+        </header>
+        <ol class="timeline" data-reveal>
+          <li><b>Week 1: <mark class="tbc">[Theme]</mark></b><span><mark class="tbc">[What happens this week]</mark></span></li>
+          <li><b>Week 2: <mark class="tbc">[Theme]</mark></b><span><mark class="tbc">[What happens this week]</mark></span></li>
+          <li><b>Week 3: <mark class="tbc">[Theme]</mark></b><span><mark class="tbc">[What happens this week]</mark></span></li>
+          <li><b>Final week: <mark class="tbc">[Showcase or wrap-up]</mark></b><span><mark class="tbc">[What happens this week]</mark></span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Gallery ===== -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head section-head--row" data-reveal>
+          <div>
+            <p class="eyebrow">Gallery</p>
+            <h2>Moments from the bootcamp</h2>
+          </div>
+        </header>
+        <div data-reveal>
+        <div class="strip-wrap" data-gallery>
+      <div class="strip" tabindex="0" role="region" aria-label="Bootcamp photos">
+        <button class="strip-item" type="button" data-cursor="View"><img src="../assets/img/bootcamp/photo-1.jpg" alt="TODO-ALT: describe bootcamp photo 1" loading="lazy" width="560" height="700" /></button>
+        <button class="strip-item" type="button" data-cursor="View"><img src="../assets/img/bootcamp/photo-2.jpg" alt="TODO-ALT: describe bootcamp photo 2" loading="lazy" width="560" height="700" /></button>
+        <button class="strip-item" type="button" data-cursor="View"><img src="../assets/img/bootcamp/photo-3.jpg" alt="TODO-ALT: describe bootcamp photo 3" loading="lazy" width="560" height="700" /></button>
+        <button class="strip-item" type="button" data-cursor="View"><img src="../assets/img/bootcamp/photo-4.jpg" alt="TODO-ALT: describe bootcamp photo 4" loading="lazy" width="560" height="700" /></button>
+        <button class="strip-item" type="button" data-cursor="View"><img src="../assets/img/bootcamp/photo-5.jpg" alt="TODO-ALT: describe bootcamp photo 5" loading="lazy" width="560" height="700" /></button>
+        <button class="strip-item" type="button" data-cursor="View"><img src="../assets/img/bootcamp/photo-6.jpg" alt="TODO-ALT: describe bootcamp photo 6" loading="lazy" width="560" height="700" /></button>
+      </div>
+      <div class="strip-nav">
+        <button class="prev" type="button" aria-label="Previous photos"><svg width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <button class="next" type="button" aria-label="Next photos"><svg width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Parent voice ===== -->
+    <section class="section section-tint">
+      <div class="container">
+        <figure class="quote-block" data-reveal>
+          <blockquote>&ldquo;<mark class="tbc">[Add a real quote from a parent or pupil.]</mark>&rdquo;</blockquote>
+          <figcaption><mark class="tbc">[Name, parent or pupil]</mark></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== How to join ===== -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">How to join</p>
+          <h2>Three steps to a place</h2>
+        </header>
+        <ol class="how" data-reveal>
+          <li><h3>Send your details</h3><p><mark class="tbc">[Describe step one.]</mark></p></li>
+          <li><h3>Confirm a place</h3><p><mark class="tbc">[Describe step two.]</mark></p></li>
+          <li><h3>Get ready</h3><p><mark class="tbc">[Describe step three.]</mark></p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section section-tint" id="faq">
+      <div class="container split split-faq">
+        <div data-reveal>
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions from parents</h2>
+          <p class="lead">Something else? Email <a class="inline-link" href="mailto:contact@eduprime.ng">contact@eduprime.ng</a>.</p>
+        </div>
+        <div class="accordion" data-reveal>
+          <div class="acc-item">
+            <h3><button class="acc-btn" aria-expanded="false" aria-controls="b1" id="bq1">Who is the bootcamp for?</button></h3>
+            <div class="acc-panel" id="b1" role="region" aria-labelledby="bq1"><div><p>The bootcamp is for pupils. <mark class="tbc">[Add age range and any experience needed.]</mark></p></div></div>
+          </div>
+          <div class="acc-item">
+            <h3><button class="acc-btn" aria-expanded="false" aria-controls="b2" id="bq2">When does it run?</button></h3>
+            <div class="acc-panel" id="b2" role="region" aria-labelledby="bq2"><div><p>Every August and September. <mark class="tbc">[Add exact dates and daily times.]</mark></p></div></div>
+          </div>
+          <div class="acc-item">
+            <h3><button class="acc-btn" aria-expanded="false" aria-controls="b3" id="bq3">Is it online or in person?</button></h3>
+            <div class="acc-panel" id="b3" role="region" aria-labelledby="bq3"><div><p>It can be virtual, in person or both. <mark class="tbc">[Confirm for the next edition.]</mark></p></div></div>
+          </div>
+          <div class="acc-item">
+            <h3><button class="acc-btn" aria-expanded="false" aria-controls="b4" id="bq4">How much does it cost?</button></h3>
+            <div class="acc-panel" id="b4" role="region" aria-labelledby="bq4"><div><p><mark class="tbc">[Add fee, what it includes, and payment options.]</mark></p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Apply ===== -->
+    <section class="section" id="apply">
+      <div class="container split">
+        <div data-reveal>
+          <p class="eyebrow">
+            <span class="when" data-when="waitlist">Waitlist</span>
+            <span class="when" data-when="open">Registration</span>
+            <span class="when" data-when="closed">Stay informed</span>
+          </p>
+          <h2>
+            <span class="when" data-when="waitlist">Join the waitlist</span>
+            <span class="when" data-when="open">Reserve a seat</span>
+            <span class="when" data-when="closed">Hear about the next bootcamp</span>
+          </h2>
+          <p class="lead">Leave your details and we will contact you with dates, fees and how to confirm a place.</p>
+          <dl class="contact-list">
+            <div><dt>Email</dt><dd><a href="mailto:contact@eduprime.ng">contact@eduprime.ng</a></dd></div>
+            <div><dt>Call</dt><dd><a href="tel:+2348135320832">+234 813 532 0832</a></dd></div>
+          </dl>
+        </div>
+
+        <form class="form" id="bootcamp-form" novalidate data-reveal>
+          <div class="field">
+            <label for="b-name">Parent or guardian name</label>
+            <input id="b-name" name="name" type="text" autocomplete="name" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="b-email">Email address</label>
+            <input id="b-email" name="email" type="email" autocomplete="email" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="b-phone">Phone number</label>
+            <input id="b-phone" name="phone" type="tel" autocomplete="tel" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="b-age">Pupil's age</label>
+            <input id="b-age" name="age" type="text" inputmode="numeric" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="b-format">Preferred format</label>
+            <select id="b-format" name="format" required>
+              <option value="">Choose one</option>
+              <option>Virtual</option>
+              <option>In person</option>
+              <option>Either</option>
+            </select>
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <p class="fineprint" style="color: var(--muted); margin: 0;"><mark class="tbc">[Add a short privacy note about how you will use these details.]</mark></p>
+          <button class="btn btn-primary" data-magnetic type="submit">
+            <span class="when" data-when="waitlist">Join the waitlist</span>
+            <span class="when" data-when="open">Reserve a seat</span>
+            <span class="when" data-when="closed">Notify me</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-band" data-reveal>
+          <div>
+            <h2>What can EduPrime Systems do for your school?</h2>
+            <p>Results, fees, attendance and classes in one place.</p>
+          </div>
+          <a class="btn btn-accent btn-lg" data-magnetic href="../#contact-us">Talk to us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="finale">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="https://eduprime.ng/assets/img/logo-small.png" alt="EduPrime Systems" height="36" />
+        <p>School management software for schools from creche to senior secondary.</p>
+        <p><a href="tel:+2348135320832">+234 813 532 0832</a><br /><a href="mailto:contact@eduprime.ng">contact@eduprime.ng</a></p>
+      </div>
+
+      <nav aria-label="Useful links">
+        <h4>Useful links</h4>
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../summer-bootcamp/">Summer Bootcamp</a></li>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../#affiliates">Affiliates</a></li>
+          <li><a href="../#contact-us">Contact us</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Features">
+        <h4>What it covers</h4>
+        <ul>
+          <li><a href="../#features">Student performance tracking</a></li>
+          <li><a href="../#features">Teacher efficiency tracking</a></li>
+          <li><a href="../#features">Results management</a></li>
+          <li><a href="../#features">Categorised fee management</a></li>
+          <li><a href="../#features">Dormitory management</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h4>Get updates</h4>
+        <form class="newsletter" id="newsletter" novalidate>
+          <label class="sr-only" for="n-email">Email address</label>
+          <input id="n-email" type="email" placeholder="Your email address" autocomplete="email" required />
+          <button class="btn btn-accent btn-sm" type="submit">Subscribe</button>
+        </form>
+        <ul class="social">
+          <!-- TODO: add your real social profile URLs -->
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">X</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-base">
+      <p>&copy; 2019 &ndash; <span id="year">2026</span> EduPrime Systems. All rights reserved.</p>
+      <p>Managed by <a href="tel:+2348135320832">Apices International</a></p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

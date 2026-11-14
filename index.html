@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bootcamp="waitlist">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -11,8 +11,10 @@
   <script>document.documentElement.classList.add("js");</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/sections.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -35,18 +37,6 @@
     <symbol id="i-person" viewBox="0 0 120 120"><circle cx="60" cy="42" r="22" fill="currentColor"/><path d="M16 112c0-26 20-42 44-42s44 16 44 42z" fill="currentColor"/></symbol>
   </svg>
 
-  <!--  SECTION RAIL  -->
-  <nav class="rail" aria-label="Page sections">
-    <ul>
-      <li><a href="#home" data-label="Intro"><span class="sr-only">Intro</span></a></li>
-      <li><a href="#roles" data-label="Your team"><span class="sr-only">Your team</span></a></li>
-      <li><a href="#setup" data-label="Setup"><span class="sr-only">Setup</span></a></li>
-      <li><a href="#features" data-label="Features"><span class="sr-only">Features</span></a></li>
-      <li><a href="#affiliates" data-label="Affiliates"><span class="sr-only">Affiliates</span></a></li>
-      <li><a href="#faq" data-label="FAQ"><span class="sr-only">FAQ</span></a></li>
-      <li><a href="#contact-us" data-label="Contact"><span class="sr-only">Contact</span></a></li>
-    </ul>
-  </nav>
 
   <!--  HEADER  -->
   <header class="site-header" id="top">
@@ -63,7 +53,8 @@
         <ul class="nav-links">
           <li><a href="#features">Features</a></li>
           <li><a href="#setup">Get started</a></li>
-          <li><a href="#affiliates">Affiliates</a></li>
+          <li><a href="summer-bootcamp/">Bootcamp <span class="nav-pill">Summer</span></a></li>
+          <li><a href="blog/">Blog</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact-us">Contact</a></li>
         </ul>
@@ -75,10 +66,10 @@
               <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4.2l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <ul class="dropdown-menu" hidden>
-              <!-- TODO: replace the "#" links with your real staff and student login URLs -->
-              <li><a href="#">Staff</a></li>
-              <li><a href="#">Student</a></li>
-              <li><a href="https://eduprime.ng/login">Affiliate</a></li>
+
+              <!-- TODO: I will replace the links with real schools login URL -->
+              <li><a href="#">Schools</a></li>
+              <li><a href="https://eduprime.ng/login">Affiliates</a></li>
             </ul>
           </div>
           <a class="btn btn-primary btn-sm" data-magnetic href="https://eduprime.ng/school-register">Get started</a>
@@ -87,7 +78,7 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" data-page="home">
 
     <!--  HERO  -->
     <section class="hero" id="home">
@@ -156,21 +147,9 @@
           <div class="chip chip-b" aria-hidden="true"><span class="chip-ico chip-ico-y">A+</span><div><b>Report sheets ready</b><small>Primary 5, 36 pupils</small></div></div>
         </div>
       </div>
-
-      <!-- Marquee -->
-      <div class="marquee" aria-label="Key facts">
-        <div class="marquee-track">
-          <ul>
-            <li>Creche to SS3</li><li>No pupil limit</li><li>Works on any phone</li><li>Low data use</li><li>Fees, results and attendance in one place</li>
-          </ul>
-          <ul aria-hidden="true">
-            <li>Creche to SS3</li><li>No pupil limit</li><li>Works on any phone</li><li>Low data use</li><li>Fees, results and attendance in one place</li>
-          </ul>
-        </div>
-      </div>
     </section>
 
-    <!--  ROLES (stacked cards)  -->
+    <!--  ROLES (the stacked cards)  -->
     <section class="section" id="roles">
       <div class="container">
         <header class="section-head" data-reveal>
@@ -190,7 +169,7 @@
               </ul>
               <p class="with"><b>With EduPrime</b>See performance, fees and debts across the whole school in one place, from any device.</p>
             </div>
-            <div class="persona-art" aria-hidden="true"><svg class="person"><use href="#i-person"/></svg><span class="badge">&#10003;</span></div>
+            <div class="persona-art" aria-hidden="true"><svg class="person"><use href="#i-person"/></svg></div>
           </article>
 
           <article class="persona" style="--i:1; --tone:#fbefc7">
@@ -204,7 +183,7 @@
               </ul>
               <p class="with"><b>With EduPrime</b>Report sheets and class average are generated from the results you enter, session after session.</p>
             </div>
-            <div class="persona-art" aria-hidden="true"><svg class="person"><use href="#i-person"/></svg><span class="badge">A+</span></div>
+            <div class="persona-art" aria-hidden="true"><svg class="person"><use href="#i-person"/></svg></div>
           </article>
 
 <article class="persona" style="--i:2; --tone:#FADBD8">
@@ -220,7 +199,6 @@
   </div>
   <div class="persona-art" aria-hidden="true">
     <svg class="person"><use href="#i-person"/></svg>
-    <span class="badge">A+</span>
   </div>
 </article>
 
@@ -236,7 +214,7 @@
               </ul>
               <p class="with"><b>With EduPrime</b>Payments by category, receipts on demand and every debt tracked in one ledger.</p>
             </div>
-            <div class="persona-art" aria-hidden="true"><svg class="person"><use href="#i-person"/></svg><span class="badge">&#8358;</span></div>
+            <div class="persona-art" aria-hidden="true"><svg class="person"><use href="#i-person"/></svg></div>
           </article>
         </div>
       </div>
@@ -375,6 +353,73 @@
       </div>
     </section>
 
+        <!--  SUMMER BOOTCAMP  -->
+    <section class="section section-sun" id="bootcamp">
+      <div class="container">
+        <header class="section-head section-head--row" data-reveal>
+          <div>
+            <p class="eyebrow">Summer Bootcamp</p>
+            <h2>A summer of learning for pupils</h2>
+            <p class="lead">Hands-on sessions every August and September, online, in person or both. <mark class="tbc">The EduPrime Summer Skills Bootcamp introduces pupils to essential digital and technology skills, including Artificial Intelligence, Coding, Product Design (UI/UX), Mobile App Development, Cybersecurity, and Web Design. Through practical, engaging lessons, they learn to think creatively, solve problems, build digital projects, and develop skills that prepare them for the future.</mark></p>
+          </div>
+          <span class="status"><i></i>
+            <span class="when" data-when="waitlist">Waitlist open</span>
+            <span class="when" data-when="open">Applications open</span>
+            <span class="when" data-when="closed">Applications closed</span>
+          </span>
+        </header>
+
+        <div class="bc-grid">
+          <div data-reveal>
+          <div class="media-video" data-cursor="Watch">
+            <!-- TODO: we set data-youtube="VIDEO_ID" (YouTube) OR data-src="assets/video/thefile.mp4" (self-hosted, add data-captions="...vtt") -->
+            <button class="video-facade" type="button" data-youtube="" data-title="Summer Bootcamp preview">
+              <img src="assets/img/bootcamp/video-poster.jpg" alt="" loading="lazy" width="1280" height="720" />
+              <span class="play" aria-hidden="true"></span>
+              <span class="video-label">Watch the bootcamp preview</span>
+            </button>
+          </div>
+          </div>
+
+          <aside class="facts-card" data-reveal>
+            <h3>At a glance</h3>
+            <dl>
+              <div><dt>When</dt><dd>August to September</dd></div>
+              <div><dt>Format</dt><dd>Virtual, in person or both</dd></div>
+              <div><dt>Ages</dt><dd>10 - 20</dd></div>
+              <div><dt>Duration</dt><dd>2 Months</dd></div>
+              <div><dt>Fee</dt><dd>&#8358;30,000</dd></div>
+            </dl>
+            <a class="btn btn-primary" data-magnetic href="summer-bootcamp/#apply">
+              <span class="when" data-when="waitlist">Join the waitlist</span>
+              <span class="when" data-when="open">Reserve a seat</span>
+              <span class="when" data-when="closed">Get notified next year</span>
+            </a>
+          </aside>
+        </div>
+
+        <div data-reveal>
+        <div class="strip-wrap" data-gallery>
+      <div class="strip" tabindex="0" role="region" aria-label="Bootcamp photos">
+        <button class="strip-item" type="button" data-cursor="View"><img src="assets/img/bootcamp/photo-1.jpg" alt="TODO: describe bootcamp photo 1" loading="lazy" width="560" height="700" /></button>
+        <button class="strip-item" type="button" data-cursor="View"><img src="assets/img/bootcamp/photo-2.jpg" alt="TODO: describe bootcamp photo 2" loading="lazy" width="560" height="700" /></button>
+        <button class="strip-item" type="button" data-cursor="View"><img src="assets/img/bootcamp/photo-3.jpg" alt="TODO: describe bootcamp photo 3" loading="lazy" width="560" height="700" /></button>
+        <button class="strip-item" type="button" data-cursor="View"><img src="assets/img/bootcamp/photo-4.jpg" alt="TODO: describe bootcamp photo 4" loading="lazy" width="560" height="700" /></button>
+        <button class="strip-item" type="button" data-cursor="View"><img src="assets/img/bootcamp/photo-5.jpg" alt="TODO: describe bootcamp photo 5" loading="lazy" width="560" height="700" /></button>
+      </div>
+      <div class="strip-nav">
+        <button class="prev" type="button" aria-label="Previous photos"><svg width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <button class="next" type="button" aria-label="Next photos"><svg width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+        </div>
+
+        <div class="section-actions">
+          <a class="btn btn-ghost" data-magnetic href="summer-bootcamp/">See full details <svg class="btn-arrow" width="18" height="18"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
     <!--  AFFILIATES  -->
     <section class="section section-dark" id="affiliates">
       <div class="container split split-wide">
@@ -410,6 +455,53 @@
             <input type="range" id="c-fee" min="10000" max="300000" step="5000" value="60000" />
           </div>
         </form>
+      </div>
+    </section>
+
+    <!--  BLOG  -->
+    <section class="section section-tint" id="blog">
+      <div class="container">
+        <header class="section-head section-head--row" data-reveal>
+          <div>
+            <p class="eyebrow">Blog</p>
+            <h2>Latest from EduPrime</h2>
+          </div>
+          <a class="btn btn-ghost" data-magnetic href="blog/">View all articles <svg class="btn-arrow" width="18" height="18"><use href="#i-arrow"/></svg></a>
+        </header>
+
+        <div class="blog-grid">
+          <article class="post-card post-card--lead" data-reveal data-cursor="Read">
+      <div class="post-media">
+        <img src="assets/img/blog/post-1.jpg" alt="" loading="lazy" width="800" height="500" /><span class="badge-video" aria-hidden="true"></span>
+      </div>
+      <div class="post-body">
+        <span class="tag-pill">Featured</span>
+        <h3><a href="blog/sample-post/"> Our featured article title goes here</a></h3>
+        <p class="post-excerpt">A short summary of the article that makes people want to read it.</p>
+        <p class="post-meta">13-11-2026  &middot;  10 min read</p>
+      </div>
+    </article>
+          <article class="post-card" data-reveal data-cursor="Read">
+      <div class="post-media">
+        <img src="assets/img/blog/post-2.jpg" alt="" loading="lazy" width="800" height="500" />
+      </div>
+      <div class="post-body">
+        <span class="tag-pill">Product tips</span>
+        <h3><a href="blog/sample-post/">How to prepare end-of-term report sheets</a></h3>
+        <p class="post-meta">13-11-2026  &middot;  10 min read</p>
+      </div>
+    </article>
+          <article class="post-card" data-reveal data-cursor="Read">
+      <div class="post-media">
+        <img src="assets/img/blog/post-3.jpg" alt="" loading="lazy" width="800" height="500" />
+      </div>
+      <div class="post-body">
+        <span class="tag-pill">School management</span>
+        <h3><a href="blog/sample-post/">Keeping track of school fees and debts</a></h3>
+        <p class="post-meta">13-11-2026  &middot;  10 min read</p>
+      </div>
+    </article>
+        </div>
       </div>
     </section>
 
@@ -490,17 +582,20 @@
         </form>
       </div>
     </section>
-  </main>
 
-  <!--  FINAL CTA and FOOTER  -->
-  <footer class="site-footer" id="finale">
+        <!--  FINAL CTA -->
+    <section class="finale">
     <div class="container cta">
-      <h2 data-reveal>Ready to Simplify Your School Management?</h2>
+      <h2 data-reveal>Give your school the smarter way to grow.</h2>
       <p class="lead" data-reveal>Register in minutes and go live for staff, parents and students.</p>
       <a class="btn btn-accent btn-lg" data-magnetic href="https://eduprime.ng/school-register">Create your school account <svg class="btn-arrow" width="18" height="18"><use href="#i-arrow"/></svg></a>
     </div>
+    </section>
+  </main>
 
-    <div class="container footer-grid">
+  <!--  FOOTER  -->
+  <footer class="site-footer" id="finale">
+        <div class="container footer-grid">
       <div class="footer-brand">
         <img src="/assets/img/logo.png" alt="EduPrime Systems" height="36" />
         <p>School management software for schools from creche to senior secondary.</p>
@@ -511,8 +606,9 @@
         <h4>Useful links</h4>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About us</a></li>
-          <li><a href="#features">Features</a></li>
+          <li><a href="summer-bootcamp/">Summer Bootcamp</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="#affiliates">Affiliates</a></li>
           <li><a href="#contact-us">Contact us</a></li>
           <li><a href="#">Privacy policy</a></li>
         </ul>
@@ -554,6 +650,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="js/main.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

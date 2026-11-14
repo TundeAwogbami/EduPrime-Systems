@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Blog | EduPrime Systems</title>
+  <link rel="icon" type="image/png" sizes="150x120" href="../assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="../assets/img/favicon.png" />
+  <meta name="description" content="Guides, news and stories from EduPrime Systems, school management software for Nigerian schools." />
+  <meta name="theme-color" content="#0F2A2E" />
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/sections.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><i id="scroll-bar"></i></div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-check" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 20 20"><path d="M4 10h12M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-person" viewBox="0 0 120 120"><circle cx="60" cy="42" r="22" fill="currentColor"/><path d="M16 112c0-26 20-42 44-42s44 16 44 42z" fill="currentColor"/></symbol>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="../" aria-label="EduPrime Systems home">
+        <!-- Tip: save the logo into /assets/img/ and point this at the local copy -->
+        <img src="/assets/img/logo.png" alt="EduPrime Systems" height="40" />
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="../#features">Features</a></li>
+          <li><a href="../#setup">Get started</a></li>
+          <li><a href="../summer-bootcamp/">Bootcamp <span class="nav-pill">Summer</span></a></li>
+          <li><a href="../blog/" aria-current="page">Blog</a></li>
+          <li><a href="../#faq">FAQ</a></li>
+          <li><a href="../#contact-us">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Sign in
+              <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4.2l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="dropdown-menu" hidden>
+              <!-- TODO: replace the "#" links with your real staff and student login URLs -->
+              <li><a href="#">Staff</a></li>
+              <li><a href="#">Student</a></li>
+              <li><a href="https://eduprime.ng/login">Affiliate</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-primary btn-sm" data-magnetic href="https://eduprime.ng/school-register">Get started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" data-page="blog">
+    <section class="page-hero mist">
+      <div class="container">
+        <h1>Ideas for running a better school.</h1>
+        <p class="lead">Guides, product updates and stories from the EduPrime team. <mark class="tbc">[Adjust this line.]</mark></p>
+
+        <!-- Categories are placeholders. Keep data-filter values equal to each card's data-category. -->
+        <div class="filters" role="group" aria-label="Filter articles">
+          <button class="filter-chip" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-chip" type="button" data-filter="tips" aria-pressed="false">Product tips</button>
+          <button class="filter-chip" type="button" data-filter="management" aria-pressed="false">School management</button>
+          <button class="filter-chip" type="button" data-filter="bootcamp" aria-pressed="false">Bootcamp</button>
+          <button class="filter-chip" type="button" data-filter="news" aria-pressed="false">News</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="featured" data-reveal>
+          <article class="post-card post-card--lead" data-cursor="Read">
+      <div class="post-media">
+        <img src="../assets/img/blog/post-1.jpg" alt="" loading="lazy" width="800" height="500" /><span class="badge-video" aria-hidden="true"></span>
+      </div>
+      <div class="post-body">
+        <span class="tag-pill">Featured</span>
+        <h3><a href="sample-post/"><mark class="tbc">Sample</mark> Your featured article title goes here</a></h3>
+        <p class="post-excerpt">A short summary of the article that makes people want to read it.</p>
+        <p class="post-meta"><mark class="tbc">[Date]</mark> &middot; <mark class="tbc">[X]</mark> min read</p>
+      </div>
+    </article>
+        </div>
+
+        <div class="post-grid">
+          <article class="post-card" data-category="tips" data-cursor="Read">
+      <div class="post-media">
+        <img src="../assets/img/blog/post-2.jpg" alt="" loading="lazy" width="800" height="500" />
+      </div>
+      <div class="post-body">
+        <span class="tag-pill">Product tips</span>
+        <h3><a href="sample-post/"><mark class="tbc">Sample</mark> How to prepare end-of-term report sheets</a></h3>
+        <p class="post-excerpt">A short summary of the article.</p>
+        <p class="post-meta"><mark class="tbc">[Date]</mark> &middot; <mark class="tbc">[X]</mark> min read</p>
+      </div>
+    </article>
+          <article class="post-card" data-category="management" data-cursor="Read">
+      <div class="post-media">
+        <img src="../assets/img/blog/post-3.jpg" alt="" loading="lazy" width="800" height="500" />
+      </div>
+      <div class="post-body">
+        <span class="tag-pill">School management</span>
+        <h3><a href="sample-post/"><mark class="tbc">Sample</mark> Keeping track of school fees and debts</a></h3>
+        <p class="post-excerpt">A short summary of the article.</p>
+        <p class="post-meta"><mark class="tbc">[Date]</mark> &middot; <mark class="tbc">[X]</mark> min read</p>
+      </div>
+    </article>
+          <article class="post-card" data-category="bootcamp" data-cursor="Read">
+      <div class="post-media">
+        <img src="../assets/img/blog/post-4.jpg" alt="" loading="lazy" width="800" height="500" /><span class="badge-video" aria-hidden="true"></span>
+      </div>
+      <div class="post-body">
+        <span class="tag-pill">Bootcamp</span>
+        <h3><a href="sample-post/"><mark class="tbc">Sample</mark> What to expect at the Summer Bootcamp</a></h3>
+        <p class="post-excerpt">A short summary of the article.</p>
+        <p class="post-meta"><mark class="tbc">[Date]</mark> &middot; <mark class="tbc">[X]</mark> min read</p>
+      </div>
+    </article>
+          <article class="post-card" data-category="news" data-cursor="Read">
+      <div class="post-media">
+        <img src="../assets/img/blog/post-5.jpg" alt="" loading="lazy" width="800" height="500" />
+      </div>
+      <div class="post-body">
+        <span class="tag-pill">News</span>
+        <h3><a href="sample-post/"><mark class="tbc">Sample</mark> What is new at EduPrime Systems</a></h3>
+        <p class="post-excerpt">A short summary of the article.</p>
+        <p class="post-meta"><mark class="tbc">[Date]</mark> &middot; <mark class="tbc">[X]</mark> min read</p>
+      </div>
+    </article>
+          <article class="post-card" data-category="tips" data-cursor="Read">
+      <div class="post-media">
+        <img src="../assets/img/blog/post-6.jpg" alt="" loading="lazy" width="800" height="500" />
+      </div>
+      <div class="post-body">
+        <span class="tag-pill">Product tips</span>
+        <h3><a href="sample-post/"><mark class="tbc">Sample</mark> Setting up classes and subjects in minutes</a></h3>
+        <p class="post-excerpt">A short summary of the article.</p>
+        <p class="post-meta"><mark class="tbc">[Date]</mark> &middot; <mark class="tbc">[X]</mark> min read</p>
+      </div>
+    </article>
+          <article class="post-card" data-category="management" data-cursor="Read">
+      <div class="post-media">
+        <img src="../assets/img/blog/post-7.jpg" alt="" loading="lazy" width="800" height="500" />
+      </div>
+      <div class="post-body">
+        <span class="tag-pill">School management</span>
+        <h3><a href="sample-post/"><mark class="tbc">Sample</mark> Reading attendance trends across a term</a></h3>
+        <p class="post-excerpt">A short summary of the article.</p>
+        <p class="post-meta"><mark class="tbc">[Date]</mark> &middot; <mark class="tbc">[X]</mark> min read</p>
+      </div>
+    </article>
+        </div>
+        <p class="empty-note" hidden>No articles in this category yet. Check back soon.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-band" data-reveal>
+          <div>
+            <h2>Want these in your inbox?</h2>
+            <p>Use the subscribe box at the bottom of the page.</p>
+          </div>
+          <a class="btn btn-accent btn-lg" data-magnetic href="#finale">Subscribe</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="finale">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="https://eduprime.ng/assets/img/logo-small.png" alt="EduPrime Systems" height="36" />
+        <p>School management software for schools from creche to senior secondary.</p>
+        <p><a href="tel:+2348135320832">+234 813 532 0832</a><br /><a href="mailto:contact@eduprime.ng">contact@eduprime.ng</a></p>
+      </div>
+
+      <nav aria-label="Useful links">
+        <h4>Useful links</h4>
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../summer-bootcamp/">Summer Bootcamp</a></li>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../#affiliates">Affiliates</a></li>
+          <li><a href="../#contact-us">Contact us</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Features">
+        <h4>What it covers</h4>
+        <ul>
+          <li><a href="../#features">Student performance tracking</a></li>
+          <li><a href="../#features">Teacher efficiency tracking</a></li>
+          <li><a href="../#features">Results management</a></li>
+          <li><a href="../#features">Categorised fee management</a></li>
+          <li><a href="../#features">Dormitory management</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h4>Get updates</h4>
+        <form class="newsletter" id="newsletter" novalidate>
+          <label class="sr-only" for="n-email">Email address</label>
+          <input id="n-email" type="email" placeholder="Your email address" autocomplete="email" required />
+          <button class="btn btn-accent btn-sm" type="submit">Subscribe</button>
+        </form>
+        <ul class="social">
+          <!-- TODO: add your real social profile URLs -->
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">X</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-base">
+      <p>&copy; 2019 &ndash; <span id="year">2026</span> EduPrime Systems. All rights reserved.</p>
+      <p>Managed by <a href="tel:+2348135320832">Apices International</a></p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

@@ -57,7 +57,7 @@ EduPrime Systems is a school management platform for schools from creche to seni
 | Styling | CSS custom properties (design tokens), Grid, Flexbox, `position: sticky`, `clamp()` fluid type and spacing, `backdrop-filter`, CSS animations and transitions, `prefers-reduced-motion` |
 | Behaviour | Vanilla ES6+ JavaScript in a single IIFE, no libraries |
 | Browser APIs | `IntersectionObserver`, `requestAnimationFrame`, `MutationObserver`, `matchMedia`, `Intl.NumberFormat` (`en-NG`, NGN), `FormData`, `fetch` |
-| Fonts | [Bricolage Grotesque](https://fonts.google.com/specimen/Bricolage+Grotesque) (headings) and [Figtree](https://fonts.google.com/specimen/Figtree) (body) via Google Fonts |
+| Fonts | Arial (headings and display text, system font) and Figtree (body) via Google Fonts |
 | Tooling | VS Code with the Live Server extension |
 
 ---

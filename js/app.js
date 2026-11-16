@@ -136,6 +136,18 @@
       });
     }
 
+    // Any subscribe form inside a page (pages are swapped in and out, so listen on the document)
+document.addEventListener("submit", (e) => {
+  const form = e.target.closest("form[data-newsletter]");
+  if (!form) return;
+  e.preventDefault();
+  const input = $("input[type=email]", form);
+  if (!emailOk(input.value)) { toast("Enter a valid email address."); input.focus(); return; }
+  // TODO: send input.value to our newsletter provider
+  form.reset();
+  toast("Thanks for subscribing.");
+});
+
     // Magnetic buttons (delegated, so swapped pages work automatically)
     if (finePointer && !reduceMotion) {
       let mag = null;

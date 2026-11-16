@@ -29,7 +29,6 @@
   <header class="site-header" id="top">
     <div class="container nav">
       <a class="brand" href="../" aria-label="EduPrime Systems home">
-        <!-- Tip: save the logo into /assets/img/ and point this at the local copy -->
         <img src="/assets/img/logo.png" alt="EduPrime Systems" height="40" />
       </a>
 
@@ -54,9 +53,8 @@
               <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4.2l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <ul class="dropdown-menu" hidden>
-              <!-- TODO: replace the "#" links with your real staff and student login URLs -->
-              <li><a href="#">Staff</a></li>
-              <li><a href="#">Student</a></li>
+              <!-- TODO: replace the "#" links with our real school and affiliates login URLs -->
+              <li><a href="#">Schools</a></li>
               <li><a href="https://eduprime.ng/login">Affiliate</a></li>
             </ul>
           </div>
@@ -66,13 +64,17 @@
     </div>
   </header>
 
-  <main id="main" data-page="blog">
-    <section class="page-hero mist">
-      <div class="container">
-        <h1>Ideas for running a better school.</h1>
-        <p class="lead">Guides, product updates and stories from the EduPrime team. <mark class="tbc">[Adjust this line.]</mark></p>
+<main id="main" data-page="blog">
+  <section class="page-hero mist">
+    <div class="container">
+      <p class="eyebrow">The EduPrime Blog</p>
+      <h1>Smarter ideas for better schools.</h1>
+      <p class="lead">
+        Practical insights, helpful guides and fresh perspectives on school management, teaching, technology and the future of education. Discover better ways to run your school and create meaningful learning experiences.
+      </p>
 
-        <!-- Categories are placeholders. Keep data-filter values equal to each card's data-category. -->
+
+        <!-- These categories are placeholders. We will keep data-filter values equal to each card's data-category. -->
         <div class="filters" role="group" aria-label="Filter articles">
           <button class="filter-chip" type="button" data-filter="all" aria-pressed="true">All</button>
           <button class="filter-chip" type="button" data-filter="tips" aria-pressed="false">Product tips</button>
@@ -91,10 +93,16 @@
         <img src="../assets/img/blog/post-1.jpg" alt="" loading="lazy" width="800" height="500" /><span class="badge-video" aria-hidden="true"></span>
       </div>
       <div class="post-body">
-        <span class="tag-pill">Featured</span>
-        <h3><a href="sample-post/"><mark class="tbc">Sample</mark> Your featured article title goes here</a></h3>
-        <p class="post-excerpt">A short summary of the article that makes people want to read it.</p>
-        <p class="post-meta"><mark class="tbc">[Date]</mark> &middot; <mark class="tbc">[X]</mark> min read</p>
+        <span class="tag-pill">Featured</span> <h3>
+        <a href="school-management-challenges-and-how-to-solve-them/">
+          7 Common School Management Challenges and How to Solve Them
+        </a>
+      </h3> <p class="post-excerpt">
+            From managing student records and tracking school fees to coordinating teachers and communicating with parents, running a school comes with daily challenges. Discover practical ways to simplify school administration and create a more organised learning environment.
+            </p> <p class="post-meta">
+             November 15, 2026 &middot; 6 min read
+            </p>
+
       </div>
     </article>
         </div>
@@ -172,22 +180,25 @@
     </section>
 
     <section class="section" style="padding-top: 0;">
-      <div class="container">
-        <div class="cta-band" data-reveal>
-          <div>
-            <h2>Want these in your inbox?</h2>
-            <p>Use the subscribe box at the bottom of the page.</p>
-          </div>
-          <a class="btn btn-accent btn-lg" data-magnetic href="#finale">Subscribe</a>
-        </div>
+  <div class="container">
+    <div class="cta-band" data-reveal>
+      <div>
+        <h2>Want these in your inbox?</h2>
+        <p>Enter your email and we will send you new articles.</p>
       </div>
-    </section>
-  </main>
+      <form class="newsletter" data-newsletter novalidate>
+        <label class="sr-only" for="blog-email">Email address</label>
+        <input id="blog-email" type="email" placeholder="Your email address" autocomplete="email" required />
+        <button class="btn btn-accent" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
 
   <footer class="site-footer" id="finale">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <img src="https://eduprime.ng/assets/img/logo-small.png" alt="EduPrime Systems" height="36" />
+        <img src="/assets/img/logo.png" alt="EduPrime Systems" height="36" />
         <p>School management software for schools from creche to senior secondary.</p>
         <p><a href="tel:+2348135320832">+234 813 532 0832</a><br /><a href="mailto:contact@eduprime.ng">contact@eduprime.ng</a></p>
       </div>
@@ -235,7 +246,7 @@
 
     <div class="container footer-base">
       <p>&copy; 2019 &ndash; <span id="year">2026</span> EduPrime Systems. All rights reserved.</p>
-      <p>Managed by <a href="tel:+2348135320832">Apices International</a></p>
+      <p>Managed by <a href="tel:+2348039829432">Apices International</a></p>
     </div>
   </footer>
 

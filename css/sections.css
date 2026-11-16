@@ -216,3 +216,4 @@ html.soft-nav .loader { display: none !important; }
 
 /* Final call-to-action now lives inside <main> (so the footer can stay the same on every page) */
 .finale { position: relative; background: var(--ink); color: #c9d9d8; overflow: hidden; }
+.cta-band .newsletter { flex: 1 1 340px; max-width: 460px; }
